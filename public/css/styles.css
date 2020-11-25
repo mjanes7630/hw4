@@ -1,0 +1,46 @@
+body{
+    background-color:black;
+    color:grey;
+}
+
+header, main, nav, footer{
+    text-align: center;
+}
+
+nav a{
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none;
+}
+
+a:link{
+    color:blue;
+}
+
+a:visited{
+    color:purple;
+}
+
+a:hover{
+    color:red;
+}
+
+nav a:hover{
+    border-bottom:2px orange solid;
+    font-size: 2em;
+    transition: 1s;
+}
+
+#resize{
+    min-width: 350px;
+    max-width: 400px;
+    
+    min-height: 250px;
+    min-height: 300px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}

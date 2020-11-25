@@ -1,0 +1,19 @@
+ <%- include('partials/header.ejs') %>
+ <%- include('partials/nav.ejs') %>
+
+        <main>
+            <figure>
+                <img src="img/Volume.gif" alt="Volume based attack" id="resize">
+            </figure>
+
+            <article>
+                <h1>Volumetric Based Attack</h1>
+                <p>Volumetric based attacks are when a netowrk system recieves an unmanageable amount of requests. The sheer amount of requests pulls the majority of the system's resources to deal with.</p>
+                <p>The requests are typically so large that even by pulling all resources it is still unmanageable, which results in the system crashing.</p>
+                <p>One of the most well known Volumetic based attacks is called the ping of death. This is caused by a malicous source creating a packet that is larger than is allowed.</p>
+                <p>They then send that packet to the network, and upon ariving the network tries to put the packet back together. This then leads to a memory overflow and the system crashing.</p>
+                <p>The packet set is a ping packet thousands of times larger than a normal ping. <a href="https://www.ionos.com/digitalguide/server/security/ping-of-death/#:~:text=A%20ping%20of%20death%20is,data%20packet%20to%20the%20target.&text=And%20lastly%2C%20volumetric%20attacks%20inflict,as%20well%20as%20UDP%20floods.">Source</a></p>
+            </article>
+        </main>
+        
+<%- include('partials/footer.ejs') %>

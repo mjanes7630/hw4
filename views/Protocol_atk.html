@@ -1,0 +1,18 @@
+ <%- include('partials/header.ejs') %>
+ <%- include('partials/nav.ejs') %>
+
+       <main>
+            <figure>
+                <img src="img/Handshake.png" alt="Three-Way Handshake" id="resize">
+            </figure>
+            
+            <article>
+                <h1>Protocol Attack</h1>
+                <p>A protocl attack focuses on exploiting a networking protocol in order to crash a system. An example of this is a SYN flood. In a SYN flood a malicous user exploits a TCP connections "three-way handshake." </p>
+                <p>When a TCP connection is established the first system requests a connection, followed by the recieving system sending a confirmation, which is lastly followed by the initial system sending a confirmation.</p>
+                <p>In order to exploit the TCP handshake the malicous user will spam the system with TCP connection requests, then not respond to the confirmation. This essentially leaves the system in limbo waiting for a response.</p>
+                <p>Since this is done on such a large scale it will consume all of the systems resources making it impossible for any new connections to be made. <a href="https://www.imperva.com/learn/ddos/syn-flood/">Source</a></p>
+            </article>
+        </main>
+        
+<%- include('partials/footer.ejs') %>
